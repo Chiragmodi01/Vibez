@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 body {
   background-color: #282c34;
 }
 
 .App {
   text-align: center;
-  max-width: 728px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .App header {
-  background-color: #181717;
+  /* background-color: #181717; */
+  box-shadow:0px 1px 6px -3px black;
   height: 10vh;
   min-height: 50px;
   color: white;
   position: fixed;
   width: 100%;
-  max-width: 728px;
   top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  /* background-color: rgb(40, 37, 53); */
 }
 
 main {
@@ -46,21 +49,18 @@ main::-webkit-scrollbar {
   width: 0.25rem;
 }
 
-main::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
 
 main::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
 form {
-  height: 10vh;
+  height: 11vh;
   position: fixed;
   bottom: 0;
   background-color: transparent;   /*rgb(24, 23, 23)*/
   width: 100%;
-  max-width: 728px;
+  max-width: 1000px;
   display: flex;
   font-size: 1.5rem;
   padding: 7px;
@@ -80,8 +80,9 @@ input {
   line-height: 1.5;
   width: 100%;
   font-size: 1.5rem;
-  background: rgb(58, 58, 58);
-  color: white;
+  background: transparent;
+  backdrop-filter: contrast(0.8);
+  color: black;
   outline: none;
   border: none;
   padding: 0 10px;
@@ -91,9 +92,9 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
-  border: none;
-  color: white;
+    border: none;
+    color: black;
+    border-radius: 17px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -109,8 +110,6 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
-  background: white;
   max-width: 400px;
   margin: 0 auto;
 }
